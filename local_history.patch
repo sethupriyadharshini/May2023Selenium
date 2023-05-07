@@ -1,0 +1,17 @@
+Index: src/main/java/org/example/StaleElementReferenceExample.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/StaleElementReferenceExample.java b/src/main/java/org/example/StaleElementReferenceExample.java
+--- a/src/main/java/org/example/StaleElementReferenceExample.java	
++++ b/src/main/java/org/example/StaleElementReferenceExample.java	(date 1683435126912)
+@@ -10,7 +10,7 @@
+     public static void main(String[] args){
+ 
+         WebDriver driver = new ChromeDriver();
+-        driver.manage().window().fullscreen();
++        driver.manage().window().maximize();
+         driver.get("https://www.lambdatest.com/selenium-playground/");
+         WebElement search_click = driver.findElement(By.linkText("Table Data Search"));
+         search_click.click();
